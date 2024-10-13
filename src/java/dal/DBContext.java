@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package dal;
 import java.sql.*;
 import java.util.ArrayList;
@@ -17,9 +14,9 @@ public abstract class DBContext<T> {
     public DBContext()
     {
         try {
-            String user = "sonnt";
-            String pass = "12345678";
-            String url = "jdbc:sqlserver://localhost\\SQLEXPRESS:1433;databaseName=SE1883_Stupid;trustServerCertificate=true;";
+            String user = "tungbx";
+            String pass = "1234";
+            String url = "jdbc:sqlserver://localhost\\TUNGBX:1433;databaseName=production;encrypt=true;trustServerCertificate=true;";
             
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
